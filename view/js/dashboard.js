@@ -1,11 +1,11 @@
 $(function () {
         $('#container-line').highcharts({
             title: {
-                text: 'Monthly Average Temperature',
+                text: 'Monthly Average Salary',
                 x: -20 //center
             },
             subtitle: {
-                text: 'Source: WorldClimate.com',
+                text: '',
                 x: -20
             },
             xAxis: {
@@ -14,7 +14,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: 'Temperature (°C)'
+                    text: 'Dollars (k)'
                 },
                 plotLines: [{
                     value: 0,
@@ -23,7 +23,7 @@ $(function () {
                 }]
             },
             tooltip: {
-                valueSuffix: '°C'
+                valueSuffix: ''
             },
             legend: {
                 layout: 'vertical',
@@ -32,17 +32,17 @@ $(function () {
                 borderWidth: 0
             },
             series: [{
-                name: 'Tokyo',
-                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                name: 'Tester',
+                data: [3.5, 3.5, 3.7, 3.7, 3.8, 3.8, 3.4, 3.5, 4.0, 4.0, 4.1, 4.2]
             }, {
-                name: 'New York',
-                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                name: 'Programmer',
+                data: [5.5, 5.5, 5.7, 5.7, 5.8, 5.8, 5.4, 5.5, 6.0, 6.0, 6.1, 6.2]
             }, {
-                name: 'Berlin',
-                data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                name: 'Manager',
+                data: [6.1, 6.6, 6.5, 6.4, 6.5, 7.0, 7.6, 7.9, 7.3, 7.0, 7.9, 7.0]
             }, {
-                name: 'London',
-                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                name: 'Project Leader',
+                data: [7.9, 7.2, 7.7, 7.5, 7.9, 7.2, 7.0, 7.6, 8.2, 8.3, 8.6, 8.8]
             }]
         });
     });
@@ -57,7 +57,7 @@ $(function () {
             plotShadow: false
         },
         title: {
-            text: 'Browser market shares at a specific website, 2010'
+            text: 'Position Statistics of Department'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -78,17 +78,16 @@ $(function () {
             type: 'pie',
             name: 'Browser share',
             data: [
-                ['Firefox',   45.0],
-                ['IE',       26.8],
+                ['Programmer',   65.0],
+                ['Tester',   15.0],
+                ['Manager',       10.0],
                 {
-                    name: 'Chrome',
-                    y: 12.8,
+                    name: 'President',
+                    y: 5.0,
                     sliced: true,
                     selected: true
                 },
-                ['Safari',    8.5],
-                ['Opera',     6.2],
-                ['Others',   0.7]
+                ['Project Leader',5.0]
             ]
         }]
     });
